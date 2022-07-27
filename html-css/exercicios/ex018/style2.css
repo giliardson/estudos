@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'med';
+    src: url('fonts/OldLondon.ttf') format('truetype') , url('fonts/Olondon_.otf') format('opentype')
+}
+body{
+    background-color: rgb(59, 59, 59);
+}
+
+h1{
+    color: white;
+    font-size: 4em;
+    font-family: 'med';
+    font-weight: normal;
+    text-align: center;
+}
+
+p{
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 3px 3px 0px black;
+    margin: auto;
+}

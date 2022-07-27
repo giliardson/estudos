@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+
+        a{
+            font-size: 2em;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" onclick="clique()">clique em mim</a>
+    <div id="sair"></div>
+
+    <script>
+        function clique() {
+            s = window.document.getElementById('sair')
+            s.innerHTML += '<p> vc clicou </p>'
+        }
+    </script>
+</body>
+</html>
