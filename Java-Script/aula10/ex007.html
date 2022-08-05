@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>somando numeros</title>
+    <style>
+        *{
+            font-family: monospace;
+            text-align: center;
+        }
+
+        main{
+            width: 300px;
+            margin: auto;;
+        }
+
+        input{
+            display: block;
+            margin: 5px auto;
+            width: 50px;
+            font-size: 2em;
+        }
+
+        div{
+            margin-bottom: 10px;
+            font-size: 2em;
+            font-weight: 900;
+            border: 2px solid black;
+            margin: 10px;
+        }
+
+        button{
+            border: 2px solid black;
+            border-radius: 15px;
+            background-color: lightblue;
+            font-weight: 900;
+            font-size: 1.3em;
+        }
+
+        button:hover{
+            background-color: #cdd9dd;
+        }
+
+        button:active{
+            background-color: #7fc8e0;
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <h1>Somando valores</h1>
+        <input type="number" name="text1" value="0"  id="text1">
+        <input type="number" name="text2" value="0" id="text2">
+        <button id="somar" onclick="somar()">somar</button>
+        <div id="r">Resultado</div>
+    </main>
+
+    <script>
+        function somar(){
+            var r = window.document.querySelector('#r')
+            var t1 = window.document.querySelector('#text1')
+            var t2 = window.document.querySelector('#text2')
+            var n1 = Number(t1.value)
+            var n2 = Number(t2.value)
+            var s = n1 + n2
+            r.innerHTML = ` ${n1} + ${n2} = ${s}`
+        }
+    </script>
+</body>
+</html>
