@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(56, 199, 247);
+    font-family: monospace;
+    text-align: center;
+}
+
+header{
+    color: white;
+}
+
+section{
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    width: 400px;
+    margin: auto;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+.erro{
+    color: red;
+    font-size: 1.2;
+    font-weight: 900;
+}
+
+footer{
+    margin-top: 10px;
+    color: white;
+    font-style: italic;
+    
+}
