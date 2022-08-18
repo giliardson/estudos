@@ -28,6 +28,12 @@ select{
     width: 150px;
 }
 
+#tela{
+    border: 1px solid black;
+    width: 175px;
+    margin-bottom: 10px;
+}
+
 .inf{
     font-size: 1.3em;
 }

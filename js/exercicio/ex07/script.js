@@ -2,11 +2,12 @@ dado = []
 function adicionar(){
     var num = document.getElementById('numero').value
     var tela = document.getElementById('tela')
+    
     if (num.length == 0 || num <= 0 || num > 100){
         alert('valor em branco ou invalido')
     } else {
         if (dado.indexOf(Number(num)) == -1){
-            tela.innerHTML += `<option>valor ${num} adicionado</option>`
+            tela.innerHTML += `valor ${num} adicionado<br>`
             dado.push(Number(num))
         } else{
             alert('valor ja existe')
